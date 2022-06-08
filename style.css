@@ -1,0 +1,163 @@
+/* UTILITY CLASSES */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.bg-c{
+    background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.55))
+}
+.h-primary {
+    font-size: 2.9rem;
+    padding: 10px;
+}
+.h-secondary {
+    font-size: 2.2rem;
+    padding: 10px;
+}
+.center{
+    text-align: center;
+}
+/* FOR BANNER IMG */
+.banner {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.55)), url(/bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* NAVBAR SECTION STARTS */
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover:after {
+    width: 100%;
+}
+
+/* NAVBAR SECTION ENDS HERE */
+
+/* CONTENT SECTION STARTS */
+.content {
+    width: 100%;
+    position: relative;
+    top: 10%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff
+}
+
+.content h1 {
+    font-size: 70px;
+    margin-top: 50px;
+}
+
+.content p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span {
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span {
+    width: 100%;
+}
+
+button:hover {
+    border: none;
+}
+
+/* CONTENT SECTION ENDS HERE */
+
+/* SERVICES SECTION STARTS HERE */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid #009688 ;
+    margin: 5px;
+    border-radius: 20px;
+    padding: 34px;
+    background:rgb(217, 217, 217);
+    transition: 0.5s;
+}
+#services .box:hover{
+    background: #009688;
+    border: 2px solid #005249;
+    box-shadow:5px 10px 20px #009688 
+}
+#services .box img{
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+/* SERVICES SECTION ENDS HERE */
+
+
+/* CLIENT SECTION STARTS HERE */
+
+
+/* CLIENT SECTION ENDS HERE */
